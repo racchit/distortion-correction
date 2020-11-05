@@ -35,15 +35,6 @@ dst = cv2.warpPerspective(img,M,(512,512))
 
 dst = cv2.rotate(dst, cv2.ROTATE_90_CLOCKWISE)
 dst = cv2.rotate(dst, cv2.ROTATE_90_CLOCKWISE)
-#color = [0, 255, 255] # 'cause purple!
-
-# border widths; I set them all to 150
-#top, bottom, left, right = [150]*4
-
-#dst = cv2.copyMakeBorder(dst, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color)
-
-
-#gray= cv2.cvtColor(dst,cv2.COLOR_BGR2GRAY)
 
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 cv2.imshow('image',dst)
